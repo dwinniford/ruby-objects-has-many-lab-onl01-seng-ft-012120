@@ -23,3 +23,6 @@ class Author
   end 
   
 end 
+
+bob = Author.new("Bob")
+
