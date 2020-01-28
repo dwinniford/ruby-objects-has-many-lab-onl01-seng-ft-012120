@@ -1,3 +1,4 @@
+require 'pry'
 class Author 
   attr_accessor :name 
   
@@ -7,6 +8,7 @@ class Author
   
   def posts 
     Post.all.select do |i|
+      binding.pry 
       i.author.name == self.name 
     end 
   end 
