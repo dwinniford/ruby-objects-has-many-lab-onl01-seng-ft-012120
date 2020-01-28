@@ -26,3 +26,5 @@ end
 
 bob = Author.new("Bob")
 
+bob.posts 
+
