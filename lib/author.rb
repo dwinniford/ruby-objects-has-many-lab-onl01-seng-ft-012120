@@ -31,3 +31,5 @@ bob = Author.new("Bob")
 
 bob.posts 
 
+puts "This method ran"
+
