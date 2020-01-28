@@ -1,6 +1,6 @@
 require 'pry'
 
-require_relative "../lib/post.rb"
+# require_relative "../lib/post.rb"
 
 class Author 
   attr_accessor :name 
@@ -11,7 +11,7 @@ class Author
   
   def posts 
     Post.all.select do |i|
-      binding.pry 
+      # binding.pry 
       i.author.name == self.name 
     end 
   end 
@@ -27,11 +27,11 @@ class Author
   
 end 
 
-bob = Author.new("Bob")
-bobs_post = Post.new("Hello World")
-bobs_post.author = bob 
+# bob = Author.new("Bob")
+# bobs_post = Post.new("Hello World")
+# bobs_post.author = bob 
 
-bob.posts 
+# bob.posts 
 
-puts "This method ran"
+# puts "This method ran"
 
