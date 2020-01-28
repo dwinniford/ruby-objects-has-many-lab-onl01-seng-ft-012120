@@ -28,6 +28,8 @@ class Author
 end 
 
 bob = Author.new("Bob")
+bobs_post = Post.new("Hello World")
+bobs_post.author = bob 
 
 bob.posts 
 
